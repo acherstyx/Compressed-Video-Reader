@@ -29,8 +29,9 @@ setup(
     author_email='',
     version="1.1.0",
     license='MIT',
-    url='',
     description="API for reading H.264 residuals and motion vectors",
+    long_description=open('README.md', "r").read(),
+    long_description_content_type='text/markdown',
     keywords=['h.264', 'motion vector', 'residual'],
     ext_modules=[reader],
     packages=find_packages(where='src'),
@@ -41,5 +42,15 @@ setup(
         ]
     },
     python_requires='>=3.7, <4',
-    install_requires=['pkgconfig>=1.5.1', 'numpy>=1.17.0', 'flow-vis>=0.1', 'opencv-python>=4.0']
+    install_requires=['pkgconfig>=1.5.1', 'numpy>=1.17.0', 'flow-vis>=0.1', 'opencv-python>=4.0'],
+    url='https://github.com/AcherStyx/Compressed-Video-Reader',
+    project_urls={
+        'Source': 'https://github.com/AcherStyx/Compressed-Video-Reader',
+        'Tracker': 'https://github.com/AcherStyx/Compressed-Video-Reader/issues'
+    },
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+    ]
 )
